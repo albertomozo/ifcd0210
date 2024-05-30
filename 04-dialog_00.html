@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <STYLE>
+        #modal7 {
+            border-radius : 10px;
+            /*position : absolute;*/
+            top : 60px;
+            width: 100px;
+        }
+        #modal8 {
+            background-color: blueviolet;
+        }
+    </STYLE>
+</head>
+<body>
+    <h1>Dialog </h1>
+    <p>Etiqueta dialog</p>
+    <button onclick="window.modal7.showModal();">Abrir ventana modal</button>
+
+    <dialog id="modal7">
+       <h2>Este es el título de mi ventana modal</h2>
+       <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+       <button onclick="window.modal7.close();">Cerrar</button>
+       <button onclick="window.modal8.showModal();">abrir</button>
+    </dialog>
+    <dialog id="modal8">
+        <h2>Este es el título de mi ventana modal</h2>
+        <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+        <button onclick="window.modal8.close();">Cerrar</button>
+        <button onclick="window.modal7.showModal();">abrir</button>
+     </dialog>
+<!--      <button onclick="modal.showModal();">Abrir ventana modal</button>
+     <dialog id="modal">
+        <h2>Este es el título de mi ventana modal EXTENDIDA</h2>
+        <p>Este es un texto de ejemplo dentro de una ventana modal</p>
+        <button onclick="modal.close();">Cerrar</button>
+        
+     </dialog> -->
+</body>
+</html>

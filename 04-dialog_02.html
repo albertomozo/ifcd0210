@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <STYLE>
+        #modal7 {
+            border-radius : 10px;
+            position : absolute;
+            top : 0;
+            width: 100px;
+        }
+    </STYLE>
+</head>
+<body>
+    <h1>Dialog </h1>
+    <p>Etiqueta dialog</p>
+
+    <seccion id="articulos">
+     <!--    <article id="art-01" class="ficha">
+            <p>Nombre</p>
+            <button onclick="window.modalArticulo.showModal();">Abrir ventana modal</button>
+        </article>
+        <article id="art-02" class="ficha">
+            <p>Nombre</p>
+            <button onclick="window.modalArticulo.showModal();">Abrir ventana modal</button>
+        </article> -->
+
+    </seccion>
+
+
+   
+
+    <dialog id="modalArticulo">
+       <h2>Flor</h2>
+       <p>descripcion
+       </p>
+       <button onclick="window.modalArticulo.close();">Cerrar</button>
+      
+       
+    </dialog>
+    
+
+     <script src="modal/datos.js"></script>
+     <script>
+        /* Codigo HTML  a repetir
+        <article id="art-01" class="ficha">
+            <p>Nombre</p>
+            <button onclick="window.modalArticulo.showModal();">Abrir ventana modal</button>
+        </article> */
+
+        // recorro el objeto flores
+        let textoArticulos = '';
+        for (flor of flores)
+        {
+            console.log(flor);
+            textoArticulos += `<article id="art-01" class="ficha">
+            <p>Nombre</p>
+            <button onclick="window.modalArticulo.showModal();">Abrir ventana modal</button>
+            </article>`;
+
+        }
+        document.getElementById('articulos').innerHTML = textoArticulos;
+
+
+
+     </script>
+
+</body>
+</html>

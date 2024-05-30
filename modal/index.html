@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+
+    <title>Modal</title>
+</head>
+<body>
+    <!-- pagina contenido -->
+    <main>
+        <header>
+            <h1>Modal</h1>
+        </header>
+        <div class="page">
+        
+            <a href="#" class="boton" id="btnAbrirModal" 
+                data-titulo="Ventana 1"
+                data-mensaje = 'Ventana 1 enviada desde date-mensaje '
+            >
+            ABRIR VENTANA</a><br>
+            <a href="#" class="boton" id="btnAbrirModal2" 
+                data-titulo="Ventana 2"
+                data-mensaje = 'Ventana 2 hasdhasdhasohdsdiohasbn '
+            >
+            ABRIR VENTANA 2</a>
+            <a href="MIPDF.pdf">MIPDF</a>
+            
+        </div>
+        <footer>
+            &copy; 2024
+        </footer>
+    </main>
+    
+    <!-- fin pagina contenido-->
+
+    <!-- ventana modal -->
+    <div class="fondo_transparente" id="ventanaModal" >
+        <div class="modal">
+            <div class="modal_cerrar" id="btnCerrarModal">
+                <span>x</span>
+            </div>
+            <div class="modal_titulo">VENTANA MODAL</div>
+            <div class="modal_mensaje">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, nam? Minus nihil temporibus, minima reprehenderit, rem explicabo earum nemo debitis, maxime deserunt quidem. Quia odit quae voluptate nobis sit beatae!</p>
+            </div>
+            <div class="modal_botones">
+                <a href="#" class="boton">COMPARTIR</a>
+                <a href="#" class="boton">ACEPTAR</a>
+            </div>
+        </div>
+    </div> 
+    
+    
+    <script src="script.js"></script>
+   <!--  <script src="script_01.js"></script> -->
+</body>
+</html>

@@ -1,7 +1,12 @@
-# ifcd0210
-Repositorio de prueba del curos de aplicaciones web de CEBANC en2024 Donosti
+# Ventanas modales
 
-Presentación de git
+## <dialog>
+### 04-dialog_00.html
+dialog básico
 
-https://docs.google.com/presentation/d/1v8LjvzaJVrzTUrp3jUhqi79V3jjB4E90blN_RDNsxIo/edit?usp=sharing
 
+### 04-dialog_05.html
+botonos personalizados
+
+### 04-dialog_07.html
+array method find
